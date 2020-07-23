@@ -102,6 +102,7 @@ return(outlist)
 outlist<-list(environment.searched=environmentName(envir.2.search), objects.found=outobj,search.filter.final=search.filter.final)
 
 cat('\n Hello World from server-side function lsDS() in dsBase \n')
+outlist <- NULL
 return(outlist)
 }
 }
