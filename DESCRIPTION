@@ -68,7 +68,8 @@ AggregateMethods:
     is.null=base::is.null,
     is.numeric=base::is.numeric,
     NROW=base::NROW,
-    t.test=stats::t.test
+    t.test=stats::t.test,
+    retStrDS
 AssignMethods:
     asCharacterDS,
     asDataMatrixDS,
