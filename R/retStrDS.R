@@ -1,16 +1,16 @@
 #' 
-#' @title lists all objects on a serverside environment
+#' @title returns a string from a serverside environment
 #' @description creates a list of the names of all of the objects in
 #' a specified serverside environment
-#' @details Serverside aggregate function {lsDS} called by clientside function
-#' {ds.ls}. When running analyses one may want to know the objects already generated. This 
+#' @details Serverside aggregate function {retStrDS} called by clientside function
+#' {ds.retStr}. When running analyses one may want to know the objects already generated. This 
 #' request is not disclosive as it only returns the names of the objects and not their contents. 
 #' By default, objects in the current 'active analytic environment' (".GlobalEnv")
 #' will be displayed. This
 #' is the environment that contains all of the objects that serverside DataSHIELD 
 #' is using for the main analysis or has written out to the serverside during the process
 #' of managing or undertaking the analysis (variables, scalars, matrices, data.frames etc).
-#' For further details see help for {ds.ls} function and for native R function {ls}
+#' For further details see help for {ds.retStr} function and for native R function {ls}
 #' @param search.filter either NULL or a character string (potentially including '*'
 #' wildcards) specifying required search criteria. This argument is
 #' fully specified by its corresponding argument in the clientside function.
@@ -115,4 +115,4 @@ return(outlist)
 }
 }
 #AGGREGATE FUNCTION
-# lsDS
+# retStrDS
