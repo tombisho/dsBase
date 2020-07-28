@@ -39,6 +39,12 @@ nfilter.string<-as.numeric(thr$nfilter.string)                          #
 
 envir.text<-".GlobalEnv"
 
+cat('\n Hello World from server-side function lsDS() in dsBase \n')
+temp_str <- 'Hello World from server-side dsBase::lsDS()'
+outlist <- paste0(search.filter, temp_str)
+return(outlist)
+
+
 if(env.to.search==1L)
 {
 envir.2.search<-eval(parse(text=envir.text))
