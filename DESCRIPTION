@@ -11,8 +11,7 @@ Imports:
     RANN,
     nlme,
     stringr,
-    lme4,
-    survival
+    lme4
 AggregateMethods:
     asFactorDS1,
     asListDS,
