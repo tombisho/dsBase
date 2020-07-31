@@ -24,7 +24,8 @@
 #' actually applied
 #' @author Gaye, A (2015). Updated and extended by Paul Burton (2020).
 #' @export
-retStrDS<-function(search.filter=NULL,env.to.search){
+retStrDS<-function(search.filter=NULL,env.to.search)
+{
 #########################################################################
 # DataSHIELD MODULE: CAPTURE THE nfilter SETTINGS                       #
 thr <- listDisclosureSettingsDS()                                       #
@@ -39,8 +40,8 @@ nfilter.string<-as.numeric(thr$nfilter.string)                          #
 
 envir.text<-".GlobalEnv"
 
-cat('\n Hello World from server-side function lsDS() in dsBase \n')
-temp_str <- 'Hello World from server-side dsBase::lsDS()'
+cat('\n Hello World from server-side function retStrDS() in dsBase \n')
+temp_str <- 'Hello World from server-side dsBase::retStrDS()'
 outlist <- paste0(search.filter, temp_str)
 return(outlist)
 
